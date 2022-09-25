@@ -37,6 +37,7 @@ namespace Basket.API
 
             // General Configurations
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddAutoMapper(typeof(Startup));
 
             // GRPC Configurations
             services.AddScoped<DiscountGrpcService>();
