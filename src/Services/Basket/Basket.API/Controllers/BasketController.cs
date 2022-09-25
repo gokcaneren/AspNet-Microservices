@@ -55,5 +55,10 @@ namespace Basket.API.Controllers
             return Ok();
         }
 
+        public async Task<IActionResult> Checkout([FromBody] BasketCheckout basketCheckout)
+        {
+
+        }
+
     }
 }
