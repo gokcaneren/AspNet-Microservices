@@ -19,6 +19,7 @@ namespace OcelotApiGw
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //Succesfully containerized
             services.AddOcelot()
                     .AddCacheManager(settings => settings.WithDictionaryHandle());
         }
